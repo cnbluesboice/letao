@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="assets/mui/css/iconfont.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/productDetail.css">
+    <title>商品详情</title>
+</head>
+<body>
+    <div class="layout">
+        <!-- 头部 -->
+        <header class="mui-bar mui-bar-nav">
+            <a class="mui-icon mui-icon-back mui-pull-left"></a>
+            <h1 class="mui-title">商品详情</h1>
+        </header>   
+    
+        <div class="muiContent">
+            <div class="productContent">
+                <div class="mui-slider">
+                    <div class="mui-slider-group">
+                        <!--第一个内容区容器-->
+                        <div class="mui-slider-item">
+                            <!-- 具体内容 -->
+                            <img src="images/product.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="productTitle">【莹恋】MIZUNO美津浓V1GA159002乒乓球鞋男鞋女鞋室内综合训练鞋</div>
+            <div class="productPrice">
+                价格：
+                <span class="curPrice">¥112</span>
+                <span class="oldPrice">¥342</span>
+            </div>
+            <div class="productSize">
+                尺码：<span></span>
+            </div>
+            <div class="productNum">
+                数量：<span></span>
+            </div>
+            <div class="productBtn">
+                <ul>
+                    <li>查看购物车</li>
+                    <li>加入购物车</li>
+                </ul>
+            </div>
+
+        </div>
+    
+    
+    
+
+        <!-- 底部导航 -->
+        <nav class="mui-bar mui-bar-tab">
+            <a class="mui-tab-item" href="#tabbar">
+                <span class="mui-icon mui-icon-home"></span>
+                <span class="mui-tab-label">首页</span>
+            </a>
+            <a class="mui-tab-item mui-active" href="#tabbar-with-chat">
+                <span class="mui-icon mui-icon-bars"></span>
+                <span class="mui-tab-label">分类</span>
+            </a>
+            <a class="mui-tab-item" href="#tabbar-with-contact">
+                <span class="mui-icon iconfont icon-gouwuche"></span>
+                <span class="mui-tab-label">购物车</span>
+            </a>
+            <a class="mui-tab-item" href="#tabbar-with-map">
+                <span class="mui-icon mui-icon-person"></span>
+                <span class="mui-tab-label">会员中心</span>
+            </a>
+        </nav>
+    </div>
+    
+    <script type='text/template' id="searchResult">
+        <% for(var i=0; i < data.length; i++){ %>
+            <li class="mui-col-sm-6 mui-col-xs-6">
+                <a class="picBox">
+                    <img src=" <%= data[i].pic[0].picAddr%> " alt=""> 
+                    <span class="proDesc"> <%= data[i].proName%> </span>
+                    <p>
+                        <span class="now-price"> <%= data[i].price%> </span>
+                        <span class="brfore-price"> <%= data[i].oldPrice%> </span>
+                    </p>
+                    <div class="mui-btn mui-btn-primary">立即购买</div>   
+                </a>                        
+            </li>
+        <% } %>
+    </script>
+    <script src="assets/zepto/zepto.min.js"></script>
+    <script src="assets/mui/js/mui.min.js"></script>
+    <script src="assets/artTemplate/template-native.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/productDetail.js"></script>
+</body>
+</html>

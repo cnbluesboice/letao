@@ -1,0 +1,31 @@
+.muiContent {
+  position: absolute;
+  top: 44px;
+  bottom: 50px;
+}
+.muiContent .productContent {
+  width: 100%;
+}
+.muiContent .productContent .mui-slider-item > img {
+  width: 100%;
+}
+.muiContent .productTitle {
+  font-size: 16px;
+  padding: 10px;
+}
+.muiContent .productPrice {
+  padding: 10px;
+  font-size: 16px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.muiContent .productPrice .curPrice {
+  font-size: 22px;
+  color: red;
+}
+.muiContent .productPrice .oldPrice {
+  color: #ccc;
+  font-size: 14px;
+  text-decoration: line-through;
+  margin-left: 10px;
+}

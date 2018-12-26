@@ -1,0 +1,50 @@
+.SeaResultBox {
+  position: absolute;
+  left: 0;
+  top: 44px;
+  bottom: 50px;
+}
+.SeaResultBox .mui-row {
+  padding: 10px;
+}
+.SeaResultBox .mui-row > div {
+  height: 35px;
+  line-height: 35px;
+  background-color: #efeff4;
+  font-size: 14px;
+  text-align: center;
+}
+.SeaResultBox .mui-row > div .mui-icon {
+  font-size: 14px;
+}
+.SeaResultBox .products > ul {
+  margin-top: 10px;
+}
+.SeaResultBox .products > ul > li {
+  padding: 5px;
+  float: left;
+}
+.SeaResultBox .products > ul > li > a {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  box-shadow: 0 0 5px #ccc;
+}
+.SeaResultBox .products > ul > li > a > img {
+  width: 100%;
+  display: block;
+}
+.SeaResultBox .products > ul > li > a .proDesc {
+  font-size: 14px;
+  color: #8f8f94;
+}
+.SeaResultBox .products > ul > li > a > p .now-price {
+  color: red;
+}
+.SeaResultBox .products > ul > li > a > p .brfore-price {
+  text-decoration: line-through;
+}
+.SeaResultBox .products > ul > li > a .mui-btn-primary {
+  padding: 7px 20px;
+  margin-bottom: 10px;
+}

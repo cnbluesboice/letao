@@ -1,0 +1,64 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.categoryLayout {
+  background-color: #efeff4 !important;
+}
+.categoryLayout .cateLeft {
+  width: 80px;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.categoryLayout .cateLeft > .mui-scroll-wrapper {
+  height: 100%;
+}
+.categoryLayout .cateLeft > .mui-scroll-wrapper > .mui-scroll {
+  width: 100%;
+}
+.categoryLayout .cateLeft > .mui-scroll-wrapper > .mui-scroll .links {
+  width: 100%;
+}
+.categoryLayout .cateLeft > .mui-scroll-wrapper > .mui-scroll .links > a {
+  display: block;
+  width: 100%;
+  height: 45px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  color: #000;
+  text-align: center;
+  line-height: 45px;
+}
+.categoryLayout .cateLeft > .mui-scroll-wrapper > .mui-scroll .links > a.active {
+  border-right: 1px solid #efeff4;
+  background-color: #efeff4 ;
+}
+.categoryLayout .cateRight {
+  margin-left: 90px;
+  height: 100%;
+  position: relative;
+}
+.categoryLayout .cateRight > .mui-scroll-wrapper {
+  height: 100%;
+}
+.categoryLayout .cateRight .brand-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+}
+.categoryLayout .cateRight .brand-list > li {
+  width: 33.333%;
+  float: left;
+}
+.categoryLayout .cateRight .brand-list > li > a {
+  display: block;
+  text-align: center;
+}
+.categoryLayout .cateRight .brand-list > li > a > img {
+  display: block;
+  width: 100%;
+}

@@ -1,0 +1,87 @@
+body{
+    color: #fff;
+}
+
+.layout{
+    width: 100%;
+    height: 100%;
+    padding-top: 44px;
+    padding-bottom: 50px;
+    background-color: #fff;
+    .mui-bar-nav{
+        background-color: #006699;
+        >a{
+            color: #fff;
+        }
+        >h1{
+            color: #fff;
+        }
+    }
+    .mui-bar-tab{
+        background-color: #006699;
+        >.mui-tab-item{
+            color: #fff;
+        }
+        >.mui-active.mui-tab-item{
+            color: darkorange;
+        }
+        
+    }
+    .mui-container,
+    .brand{
+        padding: 10px;
+        .mui-row{
+            margin: 0;
+            padding: 0;
+            >li{
+                >a{
+                    display: block;
+                    >img{
+                        width: 100%;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .brand{
+        >img{
+            width: 100%;
+        }
+    }
+
+    .sport{
+       .mui-row{
+           padding-top: 7px;
+            >li{
+                padding: 5px;
+                >a{
+                    padding: 5px;
+                    text-align: center;
+                    box-shadow: 0 0 5px #ccc;
+                    >img{
+                        width: 100%;
+                        display: block;
+                    }
+                    .proDesc{
+                            font-size: 14px;
+                            color: #8f8f94;
+                    }
+                    >p{
+                        .now-price{
+                            color: red;
+
+                        }
+                        .brfore-price{
+                            text-decoration: line-through;
+                        }
+                    }
+                    .mui-btn-primary{
+                        padding: 7px 20px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+       }
+    }
+}

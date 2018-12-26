@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 方法一
+        function getParamsUrl(url,name){
+            var params=url.substr((url.indexOf("?")+1));
+            var param=params.split("&");
+            console.log(param);
+            for(var i=0; i<param.length; i++){
+                var current=param[i].split("=");
+                if(current[0]==name){
+                    return current[1];
+                }
+            }
+            return null;
+        }
+        console.log(getParamsUrl(location.href,"keywords"));
+
+        // 方法二
+        // var params=new URLSearchParams(location.search).get("keywords");
+        // console.log(params);    
+    </script>
+</body>
+</html>

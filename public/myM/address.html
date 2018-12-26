@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="assets/mui/css/iconfont.css">
+    <link rel="stylesheet" href="css/base.css">
+    <script src="assets/zepto/zepto.min.js"></script>
+    <script src="assets/mui/js/mui.min.js"></script>
+    <script src="assets/artTemplate/template-native.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/address.js"></script>
+    <title>收货地址列表</title>
+    <style>
+        .add {
+            padding: 10px;
+            text-align: center;
+
+        }
+        .add>a {
+            display: block;
+            font-size: 14px;
+        }
+        .mui-media-body{
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <!-- 头部 -->
+        <header class="mui-bar mui-bar-nav">
+            <a class="mui-icon mui-icon-back mui-pull-left"></a>
+            <h1 class="mui-title">收货地址列表</h1>
+        </header>
+        
+       
+        <div class="add">
+            <a href="addAddress.html?id=0" class="addAddress">新增收货地址</a>
+        </div>
+        <ul class="mui-table-view" id="address-box">
+           
+        </ul>
+            
+       
+    
+
+        <!-- 底部导航 -->
+        <nav class="mui-bar mui-bar-tab">
+            <a class="mui-tab-item" href="#tabbar">
+                <span class="mui-icon mui-icon-home"></span>
+                <span class="mui-tab-label">首页</span>
+            </a>
+            <a class="mui-tab-item" href="#tabbar-with-chat">
+                <span class="mui-icon mui-icon-bars"></span>
+                <span class="mui-tab-label">分类</span>
+            </a>
+            <a class="mui-tab-item" href="#tabbar-with-contact">
+                <span class="mui-icon iconfont icon-gouwuche"></span>
+                <span class="mui-tab-label">购物车</span>
+            </a>
+            <a class="mui-tab-item" href="#tabbar-with-map">
+                <span class="mui-icon mui-icon-person"></span>
+                <span class="mui-tab-label">会员中心</span>
+            </a>
+        </nav>
+    </div>
+    <script type="tetx/template" id="addressTpl">
+        <%  for(var i=0; i<res.length; i++){ %>
+            <li class="mui-table-view-cell mui-media">
+                <div class="mui-slider-right mui-disabled">
+                    <span href="" class="mui-btn mui-btn-blue edit-btn" data-id="<%=res[i].id %>">编辑</span>
+                    <span class="mui-btn mui-btn-red delete-btn" data-id="<%=res[i].id %>">删除</span>
+                </div>
+                <div class="mui-media-body mui-slider-handle">
+                    邮编：<%=res[i].postCode %> 收货人：<%=res[i].recipients %> 
+                    <p class="mui-ellipsis">
+                        <%=res[i].address %>  <%=res[i].addressDetail %>
+                    </p>
+                </div>
+            </li>
+        <% } %>
+    </script>
+</body>
+</html>

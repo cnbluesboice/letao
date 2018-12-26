@@ -1,0 +1,64 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.categoryLayout{
+    background-color: #efeff4 !important;
+    .cateLeft{
+        width: 80px;
+        height: 100%;
+        float: left;
+        position: relative;
+        >.mui-scroll-wrapper{
+            height: 100%;
+            >.mui-scroll{
+                width: 100%;
+                .links{
+                    width: 100%;
+                    >a{
+                        display: block;
+                        width: 100%;
+                        height: 45px;
+                        background-color: #fff;
+                        border-bottom: 1px solid #ccc;
+                        border-right: 1px solid #ccc;
+                        color: #000;
+                        text-align: center;
+                        line-height: 45px;
+                    }
+                    >a.active{
+                        border-right: 1px solid #efeff4;
+                        background-color: #efeff4 ;
+                    }
+                }
+            }
+        }
+    }
+    .cateRight{
+        margin-left: 90px;
+        height: 100%;
+        position: relative;
+        >.mui-scroll-wrapper{
+            height: 100%;
+        }
+        .brand-list{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #fff;
+            >li{
+                width: 33.333%;
+                float: left;
+                >a{
+                    display: block;
+                    text-align: center;
+                    >img{
+                        display: block;
+                        width: 100%;
+                    } 
+                }
+            }
+           
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.headPic {
+  width: 100%;
+  padding: 10px 10px;
+  overflow: hidden;
+}
+.headPic .pic {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+.headPic .pic img {
+  width: 42px;
+  height: 42px;
+}
+.headPic .nickName {
+  font-size: 14px;
+}
+.headPic .userId {
+  font-size: 14px;
+  color: #aaa;
+}
+.mui-table-view .mui-navigate-right {
+  font-size: 14px;
+}
+.mui-table-view .loginout {
+  text-align: center;
+  font-size: 16px;
+}
